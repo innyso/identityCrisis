@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-    <<title>Identity Crisis</title>
+    <title>Identity Crisis</title>
 
 		<meta name="description" content="Introdution to infrastructure automation">
 		<meta name="author" content="Inny So">
@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -42,11 +42,108 @@
 
 			<div class="slides">
         <section>
-          <h2>Identity Crisis</h2>
-          <img src="img/whoami.gif" alt="" />  
+          <img src="img/whoami.gif" style="border:none;"/> 
+          <h1>Identity Crisis </h1>
         </section>
-
-				<section>
+        <section>
+          <section>
+            <h1>你好</h1>
+          </section>
+          <section>
+          <p class="fragment">Inny So</p>
+          <p class="fragment">ThoughtWorker</p>
+          <p class="fragment">Yes we are HIRING in Singapore!</p>
+          <p class="fragment">DevOps Consultant</p>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>History of Operation</h2>
+            <br/>
+            <p>look after the infrastructure - like god</p>
+            <p>lack of automation - bash script cannot be run twice!</p>
+            <p>secret agents - special room, never see them outside</p>
+          </section>
+          <section>
+            <h1>IT WORKS ON MY COMPUTER!</h1>
+            <p>Inconsistency between environment even tho they are suppose to be the same in test,staging, prod</p>
+            <p>Add extra complexity to debugging and maintence</p>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>DevOps Movement</h2>
+          </section>
+          <section>
+            <h2>Developer and Operation Sharing</h2>
+            <p>Practise</p>
+            <p>Test Driven Development</p>
+            <p>Kanban</p>
+            <p>Fast feedback</p>
+            <p>CI/CD</p>
+            <p>Creating secure system - how to edit a sudoer file</p>
+            <p>using scm - document versioning to allow traceability</p>
+          </section>
+          <section>
+            <h1>Automate everything</h1>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Say Hi to Infrastructure as code</h2>  
+            <p>Simple way to define the state of a system</p>
+            <p>Recreate a system in a systematic manner</p>
+            <p>Idempotent</p>  
+          </section>
+          <section>
+            <h2>Different Infrastructure as code tools</h2>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Virtualizatoin Environment</h2>
+            <p>Allow us to have our own virtualization environment</p>
+          </section>
+          <section>
+            <h2>Problems?</h2>
+            <p>Each tools has it owns API, script is vendor dependent i.e. lack of flexibility</p>
+          </section>
+          <section>
+            <h2>Vagrant</h2>
+            <p>Provide an abstract layer for all the different virtualization provider</p>
+            <p>A simple yml file defining the machine that you would like to create</p>
+            <p>file can be version and share</p>
+            <p>Imagine the day when it only take you < 5mins to setup your development environment</p>
+          </section>
+          <section>
+            <h2>Vagrant Getting started</h2>
+            <p>Download vagrant</p>
+            <p>Download the box file</p>
+            <p>Setup your first Vagrantfile</p>
+            <p>Spinup your first vagrant box</p>
+            <p>Have fun!</p>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Ansible</h2>
+          </section>
+          <section>
+            <h2>Basic</h2>
+            <p>Host files</p>
+            <p>Build in modules</p>
+            <p>Run via commandline</p>
+            <p>Run as playbook</p>
+            <p>Diagram?!?!?!?!</p>  
+          </section>
+          <section>
+            <h1>DEMO</h1>
+          </section>
+        </section> 
+        <section>
+          <h1>Real world example</h1>
+        </section>
+        <section>
 					<h2>Heads Up</h2>
 					<p>
 						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
