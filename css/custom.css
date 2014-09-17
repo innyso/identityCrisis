@@ -1,0 +1,17 @@
+.leftCol {
+  float: left;
+  width: 500px;
+}
+
+.rightCol {
+  overflow: hidden;
+}
+
+.rightCol ul {
+  list-style: none;
+}
+
+.no-border {
+  border: none;
+}
+
