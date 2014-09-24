@@ -79,6 +79,7 @@
         <section>
           <section>
             <h2>DevOps Movement</h2>
+            <img src="img/patrick.jpg" style="border:none;"/>  
           </section>
             <section fullscreen-img="img/sharingiscaring.jpg" fullscreen-size="contain">
           </section>
@@ -123,7 +124,7 @@
             </pre>
           </section>
           <section>
-            <h2>Vagrant Getting started</h2>
+            <h2>Vagrant Demo</h2>
           </section>
         </section>
         <section>
@@ -131,12 +132,49 @@
             <h2>Ansible</h2>
           </section>
           <section>
-            <h2>Basic</h2>
-            <p>Host files</p>
-            <p>Build in modules</p>
-            <p>Run via commandline</p>
-            <p>Run as playbook</p>
-            <p>Diagram?!?!?!?!</p>  
+            <h1>Host file</h1>
+            <pre>
+              <code>
+  [london]
+  192.168.50.4
+
+  [hk]
+  192.168.50.5
+
+  [webserver:children]
+  london
+  hk
+              </code>
+            </pre>
+          </section>
+          <section>
+            <h1> Configuration file</h1>
+            <pre>
+              <code>
+  [defaults]
+  host_key_checking = false
+  roles_path= /vagrant/ansible/roles
+  hash_behaviour=merge
+  private_key_file=/Users/inny/.vagrant.d/insecure_private_key
+  [ssh_connection]
+  pipelining=True
+              </code>
+            </pre>
+          </section>
+          <section>
+            <h1>Invoking ansible</h1>
+            <pre>
+              <code>
+  #ad-hoc
+  ansible -i hosts london -m ping
+              </code>
+            </pre>
+            <pre>
+              <code>
+  #playbook
+  ansible-playbook -i host sampleplaybook.yml
+              </code>
+            </pre>
           </section>
           <section>
             <h1>DEMO</h1>
@@ -145,7 +183,15 @@
         <section>
           <h1>So is that all?</h1>
         </section>
-
+        <section>
+          <h1>Thank you!</h1>
+        </section>
+        <section>
+          <h1>Feedback</h1>
+        </section>
+        <section>
+          <h1>Any Question?</h1>
+        </section>
 			</div>
 
 		</div>
